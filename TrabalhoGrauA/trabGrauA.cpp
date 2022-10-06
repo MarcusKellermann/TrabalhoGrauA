@@ -14,7 +14,7 @@ float VelocidadeDaEsfera = 0;
 
 
 
-void init()// Inicializaçao
+void init()// InicializaÃ§ao
 {
     glClearColor(1, 1, 1, 1);
     glMatrixMode(GL_PROJECTION);
@@ -61,7 +61,7 @@ void display()
 
     if (esferaY < -1.5 && (esferaX > trianguloX - 1.0 && esferaX < trianguloX + 1.0))// coordenada feita se a esfera(circulo) cair em cima do triangulo, acaba o jogo 
     {
-        esferaY = 1.8;// posçao inicial de queda do circulo
+        esferaY = 1.8;// posÃ§ao inicial de queda do circulo
         r = rand() % 4;
         if (r == 1)// se acertou pelo menos uma vez o triangulo acaba o jogo
         {
@@ -144,7 +144,7 @@ void display()
 
 
 
-void teclado(int key, int x, int y)// teclado
+void teclado(int key, int x, int y)// teclado seta esquerda e seta direita(unicas teclas que movem)
 {
     if (key == GLUT_KEY_LEFT)
         trianguloX -= 0.3;
